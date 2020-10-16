@@ -8,6 +8,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Item one = new Item(1);
+        Item two = new Item(2);
+
+        SimpleStack mystack = new SimpleStack(one,two);
+
+        System.out.println(mystack.getSize());
     }
 }
