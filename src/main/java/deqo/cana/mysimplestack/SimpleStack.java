@@ -3,7 +3,7 @@ package deqo.cana.mysimplestack;
 import java.util.EmptyStackException;
 
 public class SimpleStack implements ISimpleStack {
-    Item[] stack;
+    private final Item[] stack;
 
     SimpleStack(Item... values) {
         stack = values;

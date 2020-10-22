@@ -14,5 +14,6 @@ public class App
         SimpleStack mystack = new SimpleStack(one,two);
 
         System.out.println(mystack.getSize());
+        System.out.println(mystack.peek());
     }
 }
