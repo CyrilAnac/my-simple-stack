@@ -20,6 +20,7 @@ public class SimpleStack implements ISimpleStack {
         for (int i = 0; i < stack.length; i++) {
             size++;
         }
+
         return size;
     }
 
