@@ -14,6 +14,12 @@ public class App
         SimpleStack mystack = new SimpleStack(one,two);
 
         System.out.println(mystack.getSize());
-        System.out.println(mystack.peek());
+        System.out.println(mystack.peek().value);
+
+        mystack.push(new Item(5));
+        mystack.printStack();
+
+        System.out.println(mystack.pop().value);
+        mystack.printStack();
     }
 }
