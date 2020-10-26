@@ -52,10 +52,4 @@ public class SimpleStack implements ISimpleStack {
         return removed;
     }
 
-    public void printStack(){
-        for (int i =0 ; i < getSize() ; i++) {
-            System.out.print(stack[i].value+" ");
-        }
-    }
-
 }
