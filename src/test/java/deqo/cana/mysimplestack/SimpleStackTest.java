@@ -2,6 +2,7 @@ package deqo.cana.mysimplestack;
 
 import org.junit.Before;
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 
 import java.util.EmptyStackException;
 
@@ -16,8 +17,11 @@ public class SimpleStackTest {
     @Before //fixture
     public void setUp() {
         stack = new SimpleStack();
-        item1 = new Item(4);
-        item2 = new Item(7);
+        item1 = new Item(1);
+        item2 = new Item(4);
+//        stack = mock(SimpleStack.class);
+//        item1 = mock(Item.class);
+//        item2 = mock(Item.class);
     }
 
     @Test
@@ -25,8 +29,13 @@ public class SimpleStackTest {
         SimpleStack stack2 = new SimpleStack(item1,item2);
         assertEquals("The new stack should contains 2 items",2,stack2.getSize());
     }
+
+
+
+
     @Test
     public void isEmpty() {
+        //assertTrue(true);
         assertTrue("A new stack should be empty", stack.isEmpty());
     }
 

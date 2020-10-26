@@ -20,7 +20,7 @@ public class SimpleStack implements ISimpleStack {
 
     @Override
     public boolean isEmpty() {
-        return itemNumber == 0;
+           return itemNumber == 0;
     }
 
     @Override
