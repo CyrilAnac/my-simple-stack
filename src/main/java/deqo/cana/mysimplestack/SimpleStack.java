@@ -4,7 +4,7 @@ import java.util.EmptyStackException;
 
 /**
  * Simple stack is an implementation of the interface
- *[ISimpleStack]. This stack have a SIZE.
+ *[ISimpleStack]. This stack have a SIZE
  */
 public class SimpleStack implements ISimpleStack {
     private final int SIZE = 10;

@@ -1,5 +1,7 @@
-.class
+.class*
 target/
 .idea/
 .iml
 /my-simple-stack.iml
+.project
+org*
